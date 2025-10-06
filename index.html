@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal website of [Your Name]" />
+    <meta
+      name="keywords"
+      content="portfolio, about me, projects, contact, HTML"
+    />
+    <meta name="author" content="[Your Name]" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Your Name] - Personal Website</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1>[Your Name]</h1>
+      <p><em>Welcome to my personal website!</em></p>
+
+      <!-- Navigation menu -->
+      <nav>
+        <a href="#about">About Me</a> | <a href="#education">Education</a> |
+        <a href="#skills">Skills</a> | <a href="#projects">Projects</a> |
+        <a href="#gallery">Gallery</a> | <a href="#schedule">Schedule</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <hr />
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- ABOUT ME SECTION -->
+      <section id="about">
+        <h2>About Me</h2>
+        <figure>
+          <img src="your-photo.jpg" alt="Photo of [Your Name]" width="200" />
+          <figcaption>That’s me at my favorite place!</figcaption>
+        </figure>
+        <p>
+          Hello! My name is <strong>[Your Name]</strong>. I am
+          <u>passionate</u> about technology, creativity, and learning. I love
+          <mark>web development</mark>, <em>problem solving</em>, and exploring
+          new skills.
+        </p>
+        <blockquote>
+          "The only way to do great work is to love what you do." — Steve Jobs
+        </blockquote>
+      </section>
+
+      <hr />
+
+      <!-- EDUCATION SECTION -->
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><b>High School:</b> [Your School Name]</li>
+          <li><b>College:</b> [Your College Name]</li>
+          <li><b>Degree:</b> [Your Degree or Field]</li>
+        </ul>
+        <details>
+          <summary>See My Favorite Subjects</summary>
+          <ol>
+            <li>Computer Science</li>
+            <li>Math</li>
+            <li>Electronics</li>
+          </ol>
+        </details>
+      </section>
+
+      <hr />
+
+      <!-- SKILLS SECTION -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <p>Here are some of my current skills:</p>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Building structured web pages</dd>
+          <dt>CSS</dt>
+          <dd>Styling and layouts</dd>
+          <dt>Python</dt>
+          <dd>Backend logic and data processing</dd>
+        </dl>
+      </section>
+
+      <hr />
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <article>
+          <h3>My Portfolio Website</h3>
+          <p>This project shows my work and achievements.</p>
+          <a href="#" target="_blank">Visit project</a>
+        </article>
+
+        <article>
+          <h3>School Management System</h3>
+          <p>A simple web app to manage students and courses.</p>
+          <a href="#">See code</a>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- GALLERY SECTION -->
+      <section id="gallery">
+        <h2>My Gallery</h2>
+        <p>Some of my favorite moments:</p>
+        <img src="photo1.jpg" alt="A photo of me hiking" width="150" />
+        <img src="photo2.jpg" alt="My favorite project" width="150" />
+        <img src="photo3.jpg" alt="Friends and fun" width="150" />
+
+        <figure>
+          <video width="300" controls>
+            <source src="myvideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>My project presentation</figcaption>
+        </figure>
+
+        <audio controls>
+          <source src="voice.mp3" type="audio/mpeg" />
+          Your browser does not support the audio tag.
+        </audio>
+      </section>
+
+      <hr />
+
+      <!-- SCHEDULE SECTION (TABLE EXAMPLE) -->
+      <section id="schedule">
+        <h2>My Weekly Schedule</h2>
+        <p>Here’s how I usually spend my week:</p>
+
+        <table border="1" cellpadding="5" cellspacing="0">
+          <caption>
+            Weekly Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Morning</th>
+              <th>Afternoon</th>
+              <th>Evening</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sunday</td>
+              <td>Study HTML</td>
+              <td>Work on projects</td>
+              <td>Gym</td>
+            </tr>
+            <tr>
+              <td>Monday</td>
+              <td>Math class</td>
+              <td>Free time</td>
+              <td>Read a book</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>Computer Lab</td>
+              <td>Team meeting</td>
+              <td>Watch tutorials</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>Work on assignments</td>
+              <td>Lunch with friends</td>
+              <td>Relax</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>Online course</td>
+              <td>Practice coding</td>
+              <td>Music</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Weekend: Time for fun and family!</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Fill out the form to contact me:</p>
+
+        <form action="#" method="post">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="30"
+            placeholder="Write your message here"
+          ></textarea
+          ><br /><br />
+
+          <label for="color">Choose your favorite color:</label>
+          <input type="color" id="color" name="color" /><br /><br />
+
+          <label for="range">Rate my website:</label>
+          <input
+            type="range"
+            id="range"
+            name="rating"
+            min="0"
+            max="10"
+          /><br /><br />
+
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <label for="subscribe">Subscribe to my newsletter</label><br /><br />
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- ASIDE -->
+    <aside>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <hr />
+
+    <!-- FOOTER -->
+    <footer>
+      <p>Created by <i>[Your Name]</i> &copy; 2025</p>
+      <address>
+        You can reach me at
+        <a href="mailto:yourname@example.com">yourname@example.com</a>
+      </address>
+    </footer>
+  </body>
+</html>
