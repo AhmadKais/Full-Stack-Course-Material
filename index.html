@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- ===== BASIC META TAGS ===== -->
     <meta charset="UTF-8" />
     <meta name="description" content="Personal website of [Your Name]" />
     <meta
       name="keywords"
-      content="portfolio, about me, projects, contact, HTML"
+      content="portfolio, about me, projects, contact, HTML learning"
     />
     <meta name="author" content="[Your Name]" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmad Kais - Personal Website</title>
+    <title>Ahmad Kais - HTML Learning Page</title>
+
+    <!-- ===== SEO & SOCIAL META ===== -->
+    <meta property="og:title" content="Ahmad Kais - Personal Website" />
+    <meta
+      property="og:description"
+      content="Explore my personal website and learn HTML!"
+    />
+    <meta property="og:image" content="profile.jpg" />
+
+    <!-- ===== BASE, ICON, LINKS, SCRIPT ===== -->
+    <base href="https://example.com/" target="_blank" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
 
   <body>
-    <!-- HEADER -->
+    <!-- ===== HEADER ===== -->
     <header>
-      <h1>[Your Name]</h1>
-      <p><em>Welcome to my personal website!</em></p>
+      <h1>Ahmad Kais</h1>
+      <p><em>Welcome to my personal website and HTML learning page!</em></p>
 
-      <!-- Navigation menu -->
+      <!-- Navigation Menu -->
       <nav>
-        <a href="#about">About Me</a> | <a href="#education">Education</a> |
+        <a href="#about">About</a> | <a href="#education">Education</a> |
         <a href="#skills">Skills</a> | <a href="#projects">Projects</a> |
         <a href="#gallery">Gallery</a> | <a href="#schedule">Schedule</a> |
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contact</a> |
+        <a href="#extras">Extras</a>
       </nav>
 
       <hr />
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- ===== MAIN CONTENT ===== -->
     <main>
       <!-- ABOUT ME SECTION -->
       <section id="about">
         <h2>About Me</h2>
         <figure>
-          <img src="your-photo.jpg" alt="Photo of [Your Name]" width="200" />
+          <img src="human.jpg" alt="Photo of Ahmad Kais" width="200" />
           <figcaption>That’s me at my favorite place!</figcaption>
         </figure>
+
         <p>
-          Hello! My name is <strong>[Your Name]</strong>. I am
-          <u>passionate</u> about technology, creativity, and learning. I love
+          Hello! My name is <b>Ahmad Kais</b>. I am <u>passionate</u> about
+          technology, creativity, and learning. I love
           <mark>web development</mark>, <em>problem solving</em>, and exploring
           new skills.
         </p>
+
         <blockquote>
           "The only way to do great work is to love what you do." — Steve Jobs
         </blockquote>
+
+        <p>
+          Did you know? The word
+          <abbr title="HyperText Markup Language">HTML</abbr> is the building
+          block of the web.
+        </p>
+
+        <p>
+          Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your progress while
+          coding!
+        </p>
+
+        <pre><code>
+for (int i = 0; i < 5; i++) {
+  printf("Hello HTML Learners!\n");
+}
+        </code></pre>
       </section>
 
       <hr />
@@ -56,10 +90,11 @@
       <section id="education">
         <h2>Education</h2>
         <ul>
-          <li><b>High School:</b> [Your School Name]</li>
-          <li><b>College:</b> [Your College Name]</li>
-          <li><b>Degree:</b> [Your Degree or Field]</li>
+          <li><b>High School:</b> Alreasalah Nahif</li>
+          <li><b>College:</b> University Of Haifa</li>
+          <li><b>Degree:</b> Practical ICT Computer Science</li>
         </ul>
+
         <details>
           <summary>See My Favorite Subjects</summary>
           <ol>
@@ -75,7 +110,6 @@
       <!-- SKILLS SECTION -->
       <section id="skills">
         <h2>My Skills</h2>
-        <p>Here are some of my current skills:</p>
         <dl>
           <dt>HTML</dt>
           <dd>Building structured web pages</dd>
@@ -91,10 +125,18 @@
       <!-- PROJECTS SECTION -->
       <section id="projects">
         <h2>Projects</h2>
+
         <article>
-          <h3>My Portfolio Website</h3>
+          <header>
+            <h3>My Portfolio Website</h3>
+            <p>
+              Published on
+              <time datetime="2025-10-13">October 13, 2025</time>
+            </p>
+          </header>
           <p>This project shows my work and achievements.</p>
-          <a href="#" target="_blank">Visit project</a>
+          <a href="#">Visit project</a>
+          <footer>Written by Ahmad Kais</footer>
         </article>
 
         <article>
@@ -110,9 +152,10 @@
       <section id="gallery">
         <h2>My Gallery</h2>
         <p>Some of my favorite moments:</p>
-        <img src="photo1.jpg" alt="A photo of me hiking" width="150" />
-        <img src="photo2.jpg" alt="My favorite project" width="150" />
-        <img src="photo3.jpg" alt="Friends and fun" width="150" />
+
+        <img src="photo1.jpg" alt="Hiking trip" width="150" />
+        <img src="photo2.jpg" alt="My project demo" width="150" />
+        <img src="photo3.jpg" alt="Friends" width="150" />
 
         <figure>
           <video width="300" controls>
@@ -126,16 +169,22 @@
           <source src="voice.mp3" type="audio/mpeg" />
           Your browser does not support the audio tag.
         </audio>
+
+        <iframe
+          width="400"
+          height="250"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="My YouTube Video"
+        ></iframe>
       </section>
 
       <hr />
 
-      <!-- SCHEDULE SECTION (TABLE EXAMPLE) -->
+      <!-- SCHEDULE SECTION -->
       <section id="schedule">
         <h2>My Weekly Schedule</h2>
-        <p>Here’s how I usually spend my week:</p>
 
-        <table border="1" cellpadding="5" cellspacing="0">
+        <table border="5" cellpadding="5">
           <caption>
             Weekly Schedule
           </caption>
@@ -166,18 +215,6 @@
               <td>Team meeting</td>
               <td>Watch tutorials</td>
             </tr>
-            <tr>
-              <td>Wednesday</td>
-              <td>Work on assignments</td>
-              <td>Lunch with friends</td>
-              <td>Relax</td>
-            </tr>
-            <tr>
-              <td>Thursday</td>
-              <td>Online course</td>
-              <td>Practice coding</td>
-              <td>Music</td>
-            </tr>
           </tbody>
           <tfoot>
             <tr>
@@ -192,58 +229,73 @@
       <!-- CONTACT SECTION -->
       <section id="contact">
         <h2>Contact Me</h2>
-        <p>Fill out the form to contact me:</p>
-
         <form action="#" method="post">
-          <label for="name">Name:</label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-          /><br /><br />
+          <fieldset>
+            <legend>Contact Form</legend>
 
-          <label for="email">Email:</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-          /><br /><br />
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="name" required /><br /><br />
 
-          <label for="message">Message:</label><br />
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="30"
-            placeholder="Write your message here"
-          ></textarea
-          ><br /><br />
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="email" /><br /><br />
 
-          <label for="color">Choose your favorite color:</label>
-          <input type="color" id="color" name="color" /><br /><br />
+            <label for="message">Message:</label><br />
+            <textarea id="message" name="message" rows="4" cols="30"></textarea>
+            <br /><br />
 
-          <label for="range">Rate my website:</label>
-          <input
-            type="range"
-            id="range"
-            name="rating"
-            min="0"
-            max="10"
-          /><br /><br />
+            <label for="color">Favorite color:</label>
+            <input type="color" id="color" name="color" /><br /><br />
 
-          <input type="checkbox" id="subscribe" name="subscribe" />
-          <label for="subscribe">Subscribe to my newsletter</label><br /><br />
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" /><br /><br />
 
-          <input type="submit" value="Send Message" />
+            <label for="file">Upload Resume:</label>
+            <input type="file" id="file" accept=".pdf" /><br /><br />
+
+            <label for="number">Age:</label>
+            <input type="number" id="number" min="10" max="99" /><br /><br />
+
+            Gender:
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+            <br /><br />
+
+            <input type="checkbox" id="subscribe" />
+            <label for="subscribe">Subscribe to newsletter</label><br /><br />
+
+            <label for="range">Rate my site:</label>
+            <input type="range" id="range" min="0" max="10" /><br /><br />
+
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+          </fieldset>
         </form>
+      </section>
+
+      <hr />
+
+      <!-- EXTRAS SECTION -->
+      <section id="extras">
+        <h2>Extra HTML Elements</h2>
+
+        <p>Progress of my course: <progress value="70" max="100"></progress></p>
+
+        <p>Battery Level: <meter value="0.85">85%</meter></p>
+
+        <object
+          data="document.pdf"
+          type="application/pdf"
+          width="300"
+          height="200"
+        ></object>
+
+        <embed src="animation.gif" width="200" height="200" />
       </section>
     </main>
 
     <hr />
 
-    <!-- ASIDE -->
+    <!-- ===== ASIDE ===== -->
     <aside>
       <h3>Quick Links</h3>
       <ul>
@@ -255,9 +307,9 @@
 
     <hr />
 
-    <!-- FOOTER -->
+    <!-- ===== FOOTER ===== -->
     <footer>
-      <p>Created by <i>[Your Name]</i> &copy; 2025</p>
+      <p>Created by <i>Ahmad Kais</i> &copy; 2025</p>
       <address>
         You can reach me at
         <a href="mailto:yourname@example.com">yourname@example.com</a>
