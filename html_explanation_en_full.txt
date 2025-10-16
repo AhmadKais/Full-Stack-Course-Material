@@ -1,0 +1,239 @@
+
+HTML Explanation (English)
+==========================
+
+This document is a full example of a structured HTML5 web page. Let's go through the main parts and tags.
+
+----------------------------------
+1. <!DOCTYPE html>
+----------------------------------
+Declares that the document uses HTML5.
+
+----------------------------------
+2. <html lang="en">
+----------------------------------
+The root element of the HTML document.
+Attribute:
+- lang="en" specifies the language of the content (English).
+
+Example:
+<html lang="en">
+
+----------------------------------
+3. <head> ... </head>
+----------------------------------
+Contains metadata and links that are not displayed directly on the page.
+
+Example:
+<head>
+  <meta charset="UTF-8" />
+  <title>Ahmad Kais - HTML Learning Page</title>
+</head>
+
+Important tags:
+- <meta>: Provides metadata such as character encoding, author, keywords, and viewport.
+- <link>: Links external resources like CSS.
+- <script>: Links or embeds JavaScript files.
+
+----------------------------------
+4. <body> ... </body>
+----------------------------------
+All visible content appears inside the <body>.
+
+Example:
+<body>
+  <h1>Welcome!</h1>
+</body>
+
+----------------------------------
+5. <header>
+----------------------------------
+Used for introductory content or navigation links.
+
+Example:
+<header>
+  <h1>Ahmad Kais</h1>
+  <nav>
+    <a href="#about">About</a> | <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+----------------------------------
+6. <nav>
+----------------------------------
+Defines a set of navigation links.
+
+Example:
+<nav>
+  <a href="#section1">Section 1</a> | <a href="#section2">Section 2</a>
+</nav>
+
+----------------------------------
+7. <main> ... </main>
+----------------------------------
+Contains the main page content. Divided into multiple <section> tags.
+
+----------------------------------
+8. <section>
+----------------------------------
+Used to organize content into thematic sections (About, Education, Skills, etc.)
+
+Example:
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am Ahmad Kais.</p>
+</section>
+
+----------------------------------
+9. Text Formatting Tags
+----------------------------------
+<b>, <i>, <u>, <em>, <strong>, <mark> change the appearance of text.
+
+Example:
+<p>I <b>love</b> <em>HTML</em>!</p>
+
+----------------------------------
+10. <figure> and <figcaption>
+----------------------------------
+Used to display images or code samples with captions.
+
+Example:
+<figure>
+  <img src="photo.jpg" alt="Me" width="200" />
+  <figcaption>That’s me!</figcaption>
+</figure>
+
+----------------------------------
+11. <blockquote>, <abbr>, <kbd>, <code>, <pre>
+----------------------------------
+Used for quotations, abbreviations, keyboard keys, and preformatted text/code.
+
+Example:
+<blockquote>"Learning never exhausts the mind." – Leonardo da Vinci</blockquote>
+<abbr title="HyperText Markup Language">HTML</abbr>
+<kbd>Ctrl</kbd> + <kbd>S</kbd>
+<pre><code>for (int i=0; i<5; i++) { printf("Hello!"); }</code></pre>
+
+----------------------------------
+12. <details> and <summary>
+----------------------------------
+Used to create collapsible sections.
+
+Example:
+<details>
+  <summary>Click to read more</summary>
+  <p>Hidden details here.</p>
+</details>
+
+----------------------------------
+13. <ul>, <ol>, <dl>
+----------------------------------
+Different types of lists.
+
+<ul> – unordered list  
+<ol> – ordered list  
+<dl> – definition list  
+
+Example:
+<dl>
+  <dt>HTML</dt>
+  <dd>Building web pages</dd>
+</dl>
+
+----------------------------------
+14. <table>, <thead>, <tbody>, <tfoot>, <tr>, <th>, <td>
+----------------------------------
+Used to display tabular data.
+
+Example:
+<table border="1">
+  <thead><tr><th>Day</th><th>Task</th></tr></thead>
+  <tbody><tr><td>Sunday</td><td>Study HTML</td></tr></tbody>
+  <tfoot><tr><td colspan="2">Weekend!</td></tr></tfoot>
+</table>
+
+----------------------------------
+15. <time>
+----------------------------------
+Represents a specific time or date.
+
+Example:
+<time datetime="2025-10-13">October 13, 2025</time>
+
+----------------------------------
+16. <form> ... </form>
+----------------------------------
+Used to collect user input.
+
+Contains:
+- <input> (text, email, date, file, number, etc.)
+- <textarea>, <label>, <select>, <button>, <fieldset>, <legend>
+
+Example:
+<form action="#" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required />
+  <input type="submit" value="Send" />
+</form>
+
+----------------------------------
+17. Multimedia Tags
+----------------------------------
+<img>, <audio>, <video>, <iframe>, <embed>, <object>
+
+Example:
+<video controls>
+  <source src="myvideo.mp4" type="video/mp4" />
+</video>
+
+<iframe src="https://youtube.com/embed/example"></iframe>
+
+----------------------------------
+18. <aside>
+----------------------------------
+Used for side content or quick links.
+
+Example:
+<aside>
+  <ul>
+    <li><a href="#about">About</a></li>
+  </ul>
+</aside>
+
+----------------------------------
+19. <footer>
+----------------------------------
+Contains closing information such as copyright.
+
+Example:
+<footer>
+  <p>Created by <i>Ahmad Kais</i> &copy; 2025</p>
+</footer>
+
+----------------------------------
+20. <address>
+----------------------------------
+Contains contact or author information.
+
+Example:
+<address>
+  You can reach me at <a href="mailto:example@mail.com">example@mail.com</a>
+</address>
+
+----------------------------------
+21. <progress> and <meter>
+----------------------------------
+Represent progress or measurement values.
+
+Example:
+<progress value="70" max="100"></progress>
+<meter value="0.8">80%</meter>
+
+----------------------------------
+22. <hr>
+----------------------------------
+Creates a horizontal line separating content sections.
+
+----------------------------------
+In summary:
+This HTML demonstrates all the essential elements of modern HTML5 — structure, formatting, tables, multimedia, forms, and semantics.
