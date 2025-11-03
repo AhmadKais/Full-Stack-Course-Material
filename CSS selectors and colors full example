@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>דוגמה לצבעים ויחידות ב-CSS</title>
+  <style>
+    /* === הגדרות כלליות של הדף === */
+    body {
+      background-color: #f0f0f0;  /* צבע רקע ב-HEX */
+      font-size: 1.2em;           /* יחידה יחסית (em) – מבוססת על גודל הפונט של האב */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: currentColor;        /* משתמש בצבע הנוכחי של האלמנט */
+      direction: rtl;             /* תצוגה מימין לשמאל לעברית */
+    }
+
+    h1 {
+      color: red;                 /* צבע בשם (Named Color) */
+      text-align: center;
+    }
+
+    /* === דוגמאות לצבעים שונים === */
+    .color-box {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .hex { background-color: #FF0000; }              /* צבע ב-HEX */
+    .rgb { background-color: rgb(0, 128, 255); }     /* צבע ב-RGB */
+    .rgba { background-color: rgba(255, 0, 0, 0.5); }/* צבע ב-RGBA (כולל שקיפות) */
+    .hsl { background-color: hsl(120, 60%, 40%); }   /* צבע ב-HSL (גוון, רוויה ובהירות) */
+
+    /* === מילות מפתח לצבעים === */
+    .transparent {
+      background-color: transparent; /* שקוף לחלוטין */
+      border: 2px dashed gray;
+      color: black;
+    }
+
+    .current {
+      color: blue;                    /* צבע טקסט כחול */
+      border: 3px solid currentColor; /* משתמש באותו צבע של הטקסט */
+      background-color: white;
+    }
+
+    /* === דוגמאות ליחידות מידה === */
+    .units-section {
+      margin-top: 40px;
+    }
+
+    .absolute {
+      width: 200px;               /* יחידה מוחלטת – פיקסלים */
+      height: 80pt;               /* יחידה מוחלטת – נקודות דפוס */
+      background-color: lightgray;
+      text-align: center;
+      line-height: 80pt;
+      border: 2px solid black;
+    }
+
+    .relative {
+      width: 50%;                 /* יחסי לגודל האלמנט האב */
+      font-size: 1.5em;           /* 1.5 × מגודל הפונט של האב */
+      background-color: lightgreen;
+      margin-top: 15px;
+      padding: 10px;
+    }
+
+    .rem {
+      font-size: 2rem;            /* יחסי לגודל הפונט של אלמנט השורש (html) */
+      background-color: lightgoldenrodyellow;
+      padding: 10px;
+      margin-top: 15px;
+    }
+
+    .viewport {
+      width: 50vw;                /* 50% מרוחב חלון התצוגה */
+      height: 20vh;               /* 20% מגובה חלון התצוגה */
+      background-color: lightblue;
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .calc-box {
+      width: calc(100% - 40px);   /* חישוב דינמי של רוחב */
+      background-color: lightcoral;
+      margin-top: 15px;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎨 דוגמה לצבעים ויחידות ב-CSS</h1>
+
+  <!-- חלק ראשון: צבעים שונים -->
+  <div class="color-box hex">צבע HEX (#FF0000)</div>
+  <div class="color-box rgb">צבע RGB (rgb(0,128,255))</div>
+  <div class="color-box rgba">צבע RGBA עם שקיפות (rgba(255,0,0,0.5))</div>
+  <div class="color-box hsl">צבע HSL (hsl(120,60%,40%))</div>
+  <div class="color-box transparent">רקע שקוף</div>
+  <div class="color-box current">מסגרת בצבע הנוכחי (currentColor)</div>
+
+  <!-- חלק שני: יחידות מידה -->
+  <section class="units-section">
+    <h2>📏 דוגמאות ליחידות ב-CSS</h2>
+
+    <div class="absolute">יחידות מוחלטות (px, pt)</div>
+    <div class="relative">יחידות יחסיות (%, em)</div>
+    <div class="rem">יחידות מבוססות שורש (rem)</div>
+    <div class="viewport">יחידות חלון תצוגה (vw, vh)</div>
+    <div class="calc-box">רוחב = calc(100% - 40px)</div>
+  </section>
+
+</body>
+</html>
