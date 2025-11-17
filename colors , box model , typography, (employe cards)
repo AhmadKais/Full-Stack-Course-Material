@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Team - Profile Cards</title>
+  <style>
+    /* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page background, typography (box model + colors + typography) */
+body {
+  background-color: #f4f4f8;          /* HEX color */
+  font-family: Arial, sans-serif;     /* typography */
+  color: #333333;
+  margin: 20px;                       /* box model: margin */
+}
+
+/* Header styles */
+header {
+  background-color: rgb(57, 106, 252);  /* rgb() color */
+  color: white;
+  text-align: center;                   /* typography: alignment */
+  padding: 20px;                        /* box model: padding */
+  margin-bottom: 30px;                  /* spacing from the rest */
+  border-radius: 10px;
+}
+
+header h1 {
+  text-transform: uppercase;            /* typography */
+  letter-spacing: 2px;                  /* typography */
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;                       /* center horizontally */
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Profile card (box model + selectors) */
+.profile-card {
+  background-color: white;
+  border: 1px solid #dddddd;            /* box model: border */
+  padding: 20px;                        /* box model: padding */
+  margin: 10px;                         /* box model: margin */
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ID selector: special style for lead card */
+#lead {
+  border-color: hsl(220, 80%, 56%);     /* hsl() color */
+  box-shadow: 0 4px 10px rgba(57, 106, 252, 0.2);
+}
+
+/* Descendant selectors */
+.profile-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.profile-card .role {
+  font-size: 0.9rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.profile-card .description {
+  font-size: 0.95rem;
+  line-height: 1.4;                     /* typography: line-height */
+  margin-bottom: 15px;
+}
+
+/* Pseudo-class on cards */
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #396afc;            /* same blue */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* :hover pseudo-class on button */
+.btn:hover {
+  background-color: #2849b9;
+  cursor: pointer;
+  transform: scale(1.30);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Footer link with selector + pseudo-class */
+.footer-link {
+  color: #396afc;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Example of structural pseudo-class */
+.profile-card:first-child {
+  border-width: 2px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Team</h1>
+    <p class="subtitle">Meet the people behind the project</p>
+  </header>
+
+  <main class="container">
+    <div class="profile-card" id="lead">
+      <h2>Alex Johnson</h2>
+      <p class="role">Team Lead</p>
+      <p class="description">
+        Alex is responsible for planning, coordination and keeping the team on track.
+        Loves clean code and strong coffee.
+      </p>
+      <a href="#" class="btn">Contact</a>
+    </div>
+
+    <div class="profile-card">
+      <h2>Maria Gomez</h2>
+      <p class="role">Frontend Developer</p>
+      <p class="description">
+        Maria turns designs into beautiful, responsive interfaces. Passionate about UX and CSS animations.
+      </p>
+      <a href="#" class="btn">Contact</a>
+    </div>
+
+    <div class="profile-card">
+      <h2>Omar Ali</h2>
+      <p class="role">Backend Developer</p>
+      <p class="description">
+        Omar builds fast and secure APIs, and makes sure everything works behind the scenes.
+      </p>
+      <a href="#" class="btn">Contact</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Our Team Page</p>
+    <a href="#top" class="footer-link">Back to top</a>
+  </footer>
+</body>
+</html>
