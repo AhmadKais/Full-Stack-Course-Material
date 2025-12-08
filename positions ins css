@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Position Examples</title>
+
+<style>
+/* STATIC */
+.box-static {
+  position: static;
+  background: lightgray;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* RELATIVE */
+.box-relative {
+  position: relative;
+  background: skyblue;
+  padding: 20px;
+  top: 20px;
+  left: 30px;
+  margin-bottom: 40px;
+}
+
+/* ABSOLUTE */
+.parent {
+  position: relative;
+  background: #ddd;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.child-absolute {
+  position: absolute;
+  background: tomato;
+  padding: 10px;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* FIXED */
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: purple;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* STICKY */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background: orange;
+  padding: 15px;
+  font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Static</h2>
+<div class="box-static">Static Position</div>
+
+<h2>Relative</h2>
+<div class="box-relative">Relative Position (moved 20px down, 30px right)</div>
+
+<h2>Absolute</h2>
+<div class="parent">
+  Parent (position: relative)
+  <div class="child-absolute">Absolute Child</div>
+</div>
+
+<h2>Sticky</h2>
+<div class="sticky-header">Sticky Header</div>
+
+<p style="height:1200px;">
+Scroll down…  
+The sticky header stays on top.  
+</p>
+
+<div class="fixed-box">Fixed Box (stays when you scroll)</div>
+
+</body>
+</html>
